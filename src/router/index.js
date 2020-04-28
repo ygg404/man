@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import index from '@/components/Index'
 import comic from "@/components/comic";
+import section from '@/components/section'
 
 Vue.use(Router)
 
@@ -19,9 +19,14 @@ export default new Router({
       component: comic
     },
     {
-      path: '/hello',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/section',
+      name: 'section',
+      component: section
     }
+    // {
+    //   path: '/hello',
+    //   name: 'HelloWorld',
+    //   component: HelloWorld
+    // }
   ]
 })

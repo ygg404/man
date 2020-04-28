@@ -30,7 +30,7 @@
               </v-card>
             </li>
             <li>
-              <div style="float: left;width: 100%;display: flex;cursor: pointer;">
+              <div style="float: left;width: 100%;display: flex;cursor: pointer;" @click="gotoComicHandle">
                 <div class="imgcontent">
                   <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image">
                 </div>
@@ -56,6 +56,11 @@
             search: '',
             manName: 'first'
           }
+      },
+      methods:{
+        gotoComicHandle () {
+          this.$router.push({ path: "/comic" });
+        }
       }
     }
 </script>
@@ -82,6 +87,7 @@
     padding: 15px;
     border-radius: 10px;
     transform: scaleX(0.5);
+    max-height: 60px;
   }
   .menu_span {
     font-size: 13pt;
